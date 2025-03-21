@@ -3,84 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML with CSS</title>
-    <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #fff;
-            background: #007BFF;
-            border: none;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Brainix </title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<header>
-    <h1>Welcome to My Basic HTML Page</h1>
-</header>
+<!-- Navbar -->
+<nav>
+    <div class="logodiv">
+        <img class="logo" src="https://scontent.fhyd2-3.fna.fbcdn.net/v/t39.30808-1/467673074_1342598040460928_8651850323750074559_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=A2luDCxCIgoQ7kNvgHmIG6g&_nc_oc=AdmOpVvi6hN3E-hsxrD6y2K93CxXRgUw_RUR3JjD2Gy4d2ZOXzD0IW1FiftE1i7PA10&_nc_zt=24&_nc_ht=scontent.fhyd2-3.fna&_nc_gid=tev70Npq6IgsKbNFYBhKIA&oh=00_AYErUCPxmusybpXU8B53lpsZrmfV36f1T3hpPdg8wfg2Iw&oe=67E370FA" alt="">
+        <a href="#"><strong>BRAINIX</strong></a>
+    </div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+    <div>
+        <a href="#" class="nav-btn">Get Started</a>
+    </div>
+</nav>
 
-<main>
-    <p>This is a basic HTML page with some simple CSS styling. You can modify the content and styles as needed.</p>
-    <button>Click Me</button>
-</main>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Unlock Your Potential <br> with <span>BRAINIX</span></h1>
+        <p>Transform your future through our cutting-edge online learning platform. Access world-class courses anytime, anywhere.</p>
+        <div class="hero-btns">
+            <a href="#" class="btn btn-primary">Start Learning →</a>
+            <a href="#" class="btn btn-secondary">View Courses</a>
+        </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Learning Image">
+</section>
 
-<footer>
-    &copy; 2025 My Website my rule 
-</footer>
+<!-- Featured Courses Section -->
+<section class="featured">
+    <h2>Featured Courses</h2>
+    <p>Explore our most popular courses and start learning today</p>
+    <div class="course-container">
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course 1">
+            <div class="course-info">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, and JavaScript from scratch.</p>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course 2">
+            <div class="course-info">
+                <h3>Data Science</h3>
+                <p>Master Python, machine learning, and AI skills.</p>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course 3">
+            <div class="course-info">
+                <h3>UI/UX Design</h3>
+                <p>Design stunning user interfaces and experiences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<section class="about">
+    <h2>About BRAINIX</h2>
+    <p>BRAINIX is a leading online learning platform dedicated to transforming education through technology. We believe in making quality education accessible to everyone, everywhere.</p>
+    <p>Our platform combines cutting-edge technology with expert instruction to deliver an unmatched learning experience. Whether you're looking to advance your career or explore new interests, BRAINIX is here to guide you every step of the way.</p>
+    <div class="stats">
+        <div class="stat-box"> <strong>10K+</strong> <br> Active Students </div>
+        <div class="stat-box"> <strong>100+</strong> <br> Expert Instructors </div>
+        <div class="stat-box"> <strong>50+</strong> <br> Countries Reached </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions? We're here to help!</p>
+    <div class="contact-container">
+        <form class="contact-form">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea placeholder="Your message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: support@brainix.com</p>
+            <p>Call: +1 (555) 123-4567</p>
+            <p>Visit: 123 Learning Street, Education City, ED 12345</p>
+        </div>
+    </div>
+</section>
+
 
 </body>
 </html>
